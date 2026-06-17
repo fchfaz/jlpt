@@ -1,0 +1,264 @@
+/* style.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+.small {
+  font-size: 0.85em;
+  color: #666;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #3498db;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.ghost {
+  background-color: transparent;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.ghost:hover {
+  background-color: #e8f4f8;
+}
+
+.dangerBtn {
+  background-color: #e74c3c;
+}
+
+.dangerBtn:hover {
+  background-color: #c0392b;
+}
+
+.successBtn {
+  background-color: #2ecc71;
+}
+
+.successBtn:hover {
+  background-color: #27ae60;
+}
+
+.secondary {
+  background-color: #95a5a6;
+}
+
+.secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.btnRow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.timerBox {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.timerBox.danger {
+  color: #e74c3c;
+}
+
+.progressOuter {
+  flex-grow: 1;
+  height: 10px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  margin: 0 15px;
+  overflow: hidden;
+}
+
+.progressInner {
+  height: 100%;
+  background: #3498db;
+  width: 0%;
+  transition: width 1s linear;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  background: #f39c12;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.question {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.questionHeader {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.qNo {
+  font-weight: bold;
+  font-size: 1.2em;
+  min-width: 30px;
+}
+
+.jp {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.readingPassage {
+  background: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  margin-bottom: 15px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 45px;
+}
+
+.choice {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scriptBox {
+  background: #e8f4f8;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 45px;
+  margin-bottom: 15px;
+}
+
+.hiddenScript {
+  display: none;
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.scoreCard {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreCard strong {
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+.reviewItem {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.reviewItem.correct {
+  border-left: 5px solid #2ecc71;
+}
+
+.reviewItem.wrong {
+  border-left: 5px solid #e74c3c;
+}
+
+.footerNote {
+  text-align: center;
+  font-size: 0.8em;
+  color: #7f8c8d;
+  margin-top: 30px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulasi JLPT N4</title>
+  
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="app">
+    
+    <header class="hero">
+      <h1>Simulasi Ujian JLPT N4</h1>
+      <p>Format waktu asli: 文字・語彙 (30 mnt), 文法・読解 (60 mnt), 聴解 (35 mnt).</p>
+      
+      <div class="small" style="margin: 15px 0;">
+        <p>📌 Materi disesuaikan dengan standar JLPT N4 2025.</p>
+        <p>💡 Tips: Usahakan kerjakan jujur tanpa intip kunci jawaban dulu!</p>
+      </div>
+
+      <div class="btnRow">
+        <button onclick="startExam()">Mulai Simulasi</button>
+        <button class="ghost" onclick="showResult(true)">Lihat Review & Kunci</button>
+        <button class="dangerBtn" onclick="resetExam()">Reset Data</button>
+      </div>
+    </header>
+
+    <div id="topbar" class="topbar hide">
+      <div id="timerBox" class="timerBox">⏱ 00:00</div>
+      
+      <div class="progressOuter" aria-label="Progress Ujian">
+        <div id="progressInner" class="progressInner"></div>
+      </div>
+      
+      <button class="secondary" onclick="submitCurrentSection()">Kumpulkan & Lanjut</button>
+    </div>
+
+    <main id="screen"></main>
+
+    <footer class="footerNote">
+      <p>Project simulasi mandiri. Fitur audio (listening) memakai suara TTS bawaan dari browser/HP kamu.</p>
+    </footer>
+
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
