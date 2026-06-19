@@ -1527,7 +1527,6 @@ function renderSection(section) {
     <div class="card">
       <div class="sectionTitle">
         <div>
-          <h2>${section.title}</h2>
           <p class="small">${section.note}</p>
         </div>
         <span class="badge">${Math.round(section.duration / 60)} menit</span>
