@@ -1527,6 +1527,7 @@ function renderSection(section) {
     <div class="card">
       <div class="sectionTitle">
         <div>
+      <h2>${section.title}</h2>
           <p class="small">${section.note}</p>
         </div>
         <span class="badge">${Math.round(section.duration / 60)} menit</span>
@@ -1562,7 +1563,6 @@ function renderQuestion(q, locked) {
       <div class="questionHeader">
         <div class="qNo">${q.no}</div>
         <div>
-          <div class="badge">${q.type}</div>
           ${passage}
           <div class="qText jp">${escapeHtml(q.text || '')}</div>
           ${prompt}
